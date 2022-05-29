@@ -185,3 +185,24 @@ progress:hover {
   }
 }
 /* ------- FIM DO BOOTSTRAP-------- */
+
+#contatos {
+  margin-top: 15%;
+  height: 5vh;
+  background: rgba(0, 0, 0, 0.07);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(3.9px);
+  -webkit-backdrop-filter: blur(3.9px);
+}
+
+#contatos:hover {
+  background-color: #242424;
+}
+#contatos > a > img:hover {
+  background-color: #d4d4d4;
+  border-radius: 20px;
+}
+#contatos > a > img {
+  width: 6%;
+  margin: 13px 0px 0px 56px;
+}
