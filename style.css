@@ -43,7 +43,7 @@ nav > a > button:hover {
 
 #intermediaria {
   background-color: #242424;
-  height: 40vh;
+  height: 38vh;
   display: flex;
   text-align: justify;
   color: #d4d4d4;
@@ -157,7 +157,7 @@ progress:hover {
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover,
 .next:hover {
-  background-color: #d4d4d4;
+  background-color: #d9be90;
 }
 
 /* Fading animation */
