@@ -107,13 +107,18 @@ progress:hover {
 
 #projetos {
   background-color: #d4d4d4;
-  height: 53vh;
+  height: 50vh;
 }
 
 #projetos > h3 {
   text-align: center;
   padding-top: 3%;
   margin-bottom: 3%;
+}
+
+#projetos:hover {
+  background-color: #242424;
+  color: #d4d4d4;
 }
 
 /* -------- BOOTSTRAP ------- */
@@ -128,6 +133,10 @@ progress:hover {
 /* Hide the images by default */
 .mySlides {
   display: block;
+}
+
+.mySlides > a > img:hover {
+  filter: grayscale(1);
 }
 
 /* Next & previous buttons */
@@ -157,7 +166,8 @@ progress:hover {
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover,
 .next:hover {
-  background-color: #d9be90;
+  background-color: #242424;
+  color: #d4d4d4;
 }
 
 /* Fading animation */
