@@ -1,0 +1,14 @@
+header > h1 {
+  padding-top: 62%;
+  letter-spacing: 1.8pt;
+  word-spacing: 0.6pt;
+  line-height: 1.8;
+  color: #cc722d;
+}
+
+header > h3 {
+  letter-spacing: 1.8pt;
+  word-spacing: 0.6pt;
+  margin-bottom: 8%;
+  color: #cc722d;
+}

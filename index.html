@@ -54,10 +54,69 @@
     </div>
     <div id="projetos">
       <h3>PROJETOS</h3>
-      <p>
-        acesse os meus projetos no GitHub! aproveita e me segue pra acompanhar
-        meu desenvolvimento.
-      </p>
+      <!-- ------ Bootstrap----- -->
+
+      <!-- Slideshow container -->
+      <div class="slideshow-container">
+        <!-- Full-width images with number and caption text -->
+        <div class="mySlides fade">
+          <a href="https://github.com/">
+            <img src="./Imagens/marialau.png" style="width: 65%" />
+          </a>
+        </div>
+
+        <div class="mySlides fade">
+          <img src="./Imagens/paola.png" style="width: 65%" />
+        </div>
+
+        <div class="mySlides fade">
+          <img src="./Imagens/qrcode.png" style="width: 65%" />
+        </div>
+        <div class="mySlides fade">
+          <img src="./Imagens/music.png" style="width: 65%" />
+        </div>
+        <div class="mySlides fade">
+          <img src="./Imagens/buscadorpng.png" style="width: 65%" />
+        </div>
+
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+      <br />
+      <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+          showSlides((slideIndex += n));
+        }
+
+        function currentSlide(n) {
+          showSlides((slideIndex = n));
+        }
+
+        function showSlides(n) {
+          let i;
+          let slides = document.getElementsByClassName("mySlides");
+          let dots = document.getElementsByClassName("dot");
+          if (n > slides.length) {
+            slideIndex = 1;
+          }
+          if (n < 1) {
+            slideIndex = slides.length;
+          }
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+          }
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex - 1].style.display = "block";
+          //   dots[slideIndex - 1].className += " active";
+        }
+      </script>
+      <!-- ----- FIM DO Bootstrap----- -->
     </div>
     <!-- <div class="contatos">
       <a class="cont" href=""><h3>Contatos</h3></a>
